@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Facilities]
+(
+	[Id] INT NOT NULL IDENTITY(1,1),
+	[Name] NVARCHAR(50) NOT NULL, 
+    [CreatedOn] DATETIME NOT NULL DEFAULT GETDATE(), 
+    [IsActive] BIT NOT NULL , 
+    [Charges] DECIMAL(18, 2) NOT NULL DEFAULT 0, 
+    CONSTRAINT PK_Facilities PRIMARY KEY (Id) 
+)
